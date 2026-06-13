@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+build/
+dist/
+*.tmp
+.DS_Store
+
+# Generated local evidence can include machine-specific paths.
+evidence/
+
+# Local agent history can include private task context. Publish WORKLOG.md instead.
+작업일지.md
