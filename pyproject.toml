@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "korean-agent-maintainer-kit"
+version = "0.1.0"
+description = "Local-first maintainer workflow guardrails for agent-assisted OSS work."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  { name = "Maintainer" }
+]
+keywords = [
+  "oss",
+  "maintainer",
+  "agent",
+  "worklog",
+  "verification",
+  "windows",
+  "korean"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Version Control :: Git"
+]
+dependencies = []
+
+[project.scripts]
+agent-maintainer = "agent_maintainer_kit.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agent_maintainer_kit"]
